@@ -48,13 +48,15 @@ class MyClient(discord.Client):
             command = message.content.split(' ')
             item = command[1]
             if item == "title":
-                
+        """
+        Uncomment this for testing purposesg
+
         elif message.content == '!end':
             with open('user-data.json', 'w') as to_write:
                 json.dump(self.data, to_write)
             await self.logout()
             print("Logging off...")
-              
+        """           
 
 client = MyClient()
 client.run(token)
